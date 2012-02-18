@@ -19,8 +19,8 @@ public class GITMADLearnathonActivity extends Activity {
 			public boolean onTouch(View v, MotionEvent event) {
 				float xCo = event.getX();
 				float yCo = event.getY();
-//				int time = (int) event.getHistorySize();
 				panel.addCircle(xCo, yCo);
+				panel.postInvalidate();
 				return true;
 			}
         };
